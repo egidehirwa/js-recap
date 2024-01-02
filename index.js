@@ -277,3 +277,58 @@ if(online) {
 }
 */
 
+
+// Checked properties
+/* 
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mySubmit.onclick = function() {
+    if(myCheckBox.checked){
+        subResult.textContent = `You are subscribed`;
+    } else {
+        subResult.textContent = `You are not subscribed`;
+    }
+
+    if(visaBtn.checked) {
+        paymentResult.textContent = `You are paying with Visa`;
+    } else if (masterCardBtn.checked) {
+        paymentResult.textContent = `You are paying with MasterCard`;
+    } else if (paypalBtn.checked) {
+        paymentResult.textContent = `You are paying with Paypal`;
+    } else {
+        paymentResult.textContent = `You must select a payment type`;
+    }
+}
+ */
+
+
+// Ternary operator - A shortcut to if{} and else{} statements. Helps to assign a variable based on a condition ? codeIfTrue : codeIffalse ;
+
+// let age = 2;
+// let message = age >= 18 ? "You are an adult" : "You are a minor" ;
+// console.log(message)
+
+
+// let time = 13;
+// let greeting = time < 12 ? " Good morning" : " Good afternoon";
+// console.log(greeting)
+
+
+// let isStudent = true;
+// let message = isStudent ? "you are a student" : "You are not a student" ;
+// console.log(message)
+
+
+// let purchaseAmount = 98;
+// let discount = purchaseAmount >= 100 ? 10 : 0;
+// console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`)
+
+
+// Switch
+
