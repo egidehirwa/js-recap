@@ -330,5 +330,122 @@ mySubmit.onclick = function() {
 // console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`)
 
 
-// Switch
+// Switches - efficient replacement to many else if statements
 
+/* 
+let day = "pizza";
+
+switch(day){
+    case 1:
+        console.log("It is Monday");
+        break;
+    case 2:
+        console.log("It is Tuesday");
+        break;
+    case 3:
+        console.log("It is Wednesday");
+        break;
+    case 4:
+        console.log("It is Thursday");
+        break;
+    case 5:
+        console.log("It is Friday");
+        break;
+    case 6:
+        console.log("It is Saturday");
+        break;
+    case 7:
+        console.log("It is Sunday");
+        break;
+    default:
+        console.log(`${day} is not a day`)
+}
+ */
+
+/* 
+let testScore = 32;
+let letterGrade;
+
+switch(true){
+    case testScore >= 90:
+        letterGrade = "A";
+        break;
+    case testScore >= 80:
+        letterGrade = "B";
+        break;
+    case testScore >= 70:
+        letterGrade = "C";
+        break;
+    case testScore >= 60:
+        letterGrade = "D";
+        break;
+    default:
+        letterGrade = "F";
+}
+
+console.log(letterGrade);
+ */
+
+// String methods
+
+// let userName = "Egide Hirwa";
+
+// charAt()
+// indexOf()
+// lastIndexOf()
+// trim()
+// toUpperCase()
+// toLowerCase()
+// startsWith()
+// endsWith()
+// includes()
+// replaceAll()
+// padStart() - start this number with x so that we can get to y characters
+// padEnd()
+
+/* 
+let result = userName.includes(" ");
+
+if(result){
+    console.log("Your username can't include an empty space")
+} else {
+    console.log(userName)
+}
+
+
+let phoneNumber = "123-456-789";
+
+phoneNumber = phoneNumber.padEnd(20, "/");
+
+console.log(phoneNumber)
+*/
+
+
+// string slicing - creating substring from another string
+
+// string.slice(start, end) - The ending index is exclusive 9is not included0
+
+/* 
+const fullName = "Egidorange Hirwa";
+
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+let firstChar = fullName.slice(0,1)
+let lastChar = fullName.slice(-2)
+
+console.log(firstName)
+console.log(lastName)
+console.log(firstChar)
+console.log(lastChar)
+console.log(fullName.indexOf(" "))
+ */
+
+///////////////////////////////////////
+
+const email = "egidius@gmail.com"
+
+let userName = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1)
+
+console.log(userName);
+console.log(extension);
