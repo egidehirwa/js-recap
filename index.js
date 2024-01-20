@@ -520,6 +520,7 @@ console.log("Happy New Year");
 
 // Number guessing game
 
+/* 
 const minNum = 1;
 const maxNum = 100;
 const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
@@ -537,7 +538,16 @@ while(running){
         window.alert("Please enter a valid number");
     } else if(guess < minNum || guess > maxNum){
         window.alert("Please enter a valid number");
+    } else {
+        attempts++;
+        if(guess < answer){
+            window.alert("TOO LOW, TRY AGAIN");
+        } else if (guess > answer){
+            window.alert("TOO HIGH, TRY AGAIN");
+        } else {
+            window.alert(`CONGRATULATIONS, the anser is ${answer} it took you ${attempts} to get guess it.`);
+            running = false;
+        }
     }
-
-    running = false;
 }
+ */
