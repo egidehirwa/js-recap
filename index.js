@@ -551,3 +551,40 @@ while(running){
     }
 }
  */
+
+// Functions
+
+/* 
+function subtract(x, y){
+    return x - y;
+}
+
+function multiply(x, y){
+    return x * y;
+}
+
+function divide(x, y){
+    return x/y;
+}
+
+function isEven(number){
+    // if(number % 2 === 0){
+    //     return console.log(`${number} is an even number`)
+    // } else {
+    //     return console.log(`${number} is an odd number`)
+    // }
+
+    return number % 2 === 0 ? true : false;
+}
+
+function isEmailValid(email){
+    return email.includes("@") ? true : false;
+}
+
+console.log(isEmailValid("egide@gmail.com"))
+*/
+
+
+// Variable scope = where a variable is recognizable and accessible (local and global)
+
+
