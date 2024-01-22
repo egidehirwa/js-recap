@@ -587,4 +587,123 @@ console.log(isEmailValid("egide@gmail.com"))
 
 // Variable scope = where a variable is recognizable and accessible (local and global)
 
+// Arrays
 
+// let fruits = ["apple", "orange", "banana", "coconut"]
+
+// fruits.push("coconut") - adds an element at the end of the array
+// fruits.pop() - removes the last element
+// fruits.unshift("mango") - adds element at the beginning of the array
+// fruits.shift() - removes the first element of the array
+
+// let numOfFruits = fruits.length
+// let index = fruits.indexOf("blue")
+
+/*  To display all the elements of the array
+
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i])
+}
+ 
+// Display the elements in reverse
+
+for(let i = fruits.length -1 ; i >= 0; i--){
+    console.log(fruits[i])
+}
+
+
+// enhanced for loop
+
+// fruits.sort().reverse(); - sort the elements in alphabetical order
+
+for(let fruit of fruits){
+    console.log(fruit)
+}
+*/
+
+
+// The spread operator - ... allows an iterable such as an array or string to be expanded into separate elements (unpacking them)
+/* 
+let numbers = [1, 2, 3, 4, 5];
+let max = Math.max(...numbers)
+let min = Math.min(...numbers)
+
+let username = "Egide Hirwa";
+let letters = [...username].join("-");
+
+let fruits = ["apple", "orange", "banana", "coconut"]
+let newFruits = [...fruits]
+
+// Combines arrays
+
+let vegetables = ["brocoli","spinach", "carrots"]
+let mix = [...fruits, ...vegetables, "eggs", "milk"]
+
+console.log(mix);
+ */
+
+
+// rest parameters 
+
+/* 
+(...rest) allow a function to work with a variable number of arguments by bundling them into arrays
+
+spread = expands an array into separate elements
+rest = bundles separate elements into an array
+*/
+
+/* 
+function openFridge(...juices){
+    console.log(...juices);
+}
+
+function getJuice(...juices){
+    return juices;
+}
+
+const juice1 = "Cola";
+const juice2 = "Fants";
+const juice3 = "Sprite";
+const juice4 = "Pepsi";
+const juice5 = "Soya";
+
+const juices = getJuice(juice1, juice2, juice3, juice4);
+
+
+function sum(...numbers){
+
+    let result = 0;
+    for(number of numbers){
+        result += number
+    }
+    return result
+}
+
+let total = sum(1,4,5,6,78)
+
+function average(...numbers){
+
+    let result = 0;
+    for(number of numbers){
+        (result += number) ;
+    }
+    return result / numbers.length
+}
+
+let avg = average(3,5,6,7,8)
+
+console.log(`Your total is $${total}`)
+console.log(`Your average is $${avg}`)
+ */
+
+// Rest parameters can be used to combine strings into one
+
+/* 
+function combineStrings(...strings){
+    return strings.join(" ")
+}
+
+const fullName = combineStrings("Mr", "Egide", "Le", "3eme du nom");
+
+console.log(fullName)
+ */
