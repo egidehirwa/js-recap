@@ -707,3 +707,5 @@ const fullName = combineStrings("Mr", "Egide", "Le", "3eme du nom");
 
 console.log(fullName)
  */
+
+// Dice roller program
