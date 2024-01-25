@@ -44,3 +44,5 @@ const password = generatePassword(passwordLength,
                                   includeSymbols);
 
 console.log(`Generated password: ${password}`)
+
+

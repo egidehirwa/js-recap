@@ -708,4 +708,42 @@ const fullName = combineStrings("Mr", "Egide", "Le", "3eme du nom");
 console.log(fullName)
  */
 
-// Dice roller program
+// Callback - a function that is passed as an argument to another function
+
+/* 
+hello(wait);
+
+function hello(callback){
+    console.log("Hello");
+    callback();
+}
+
+function leave(){
+    console.log("Leave")
+}
+
+function wait(){
+    console.log("Wait");
+}
+
+function goodbye(){
+    console.log("Goodbye");
+}
+ */
+
+/* 
+sum(displayPage, 15, 8)
+
+function sum(callback, x, y){
+    let result = x + y;
+    callback(result);
+}
+
+function displayResult(result){
+    console.log(result);
+}
+
+function displayPage(result){
+    document.getElementById("myH1").textContent = result;
+}
+ */
