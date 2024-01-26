@@ -747,3 +747,24 @@ function displayPage(result){
     document.getElementById("myH1").textContent = result;
 }
  */
+
+// forEach method - used to loop through an array and apply a certain function
+/* 
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(square);
+numbers.forEach(display);
+
+function double(element, index, array){
+    array[index] = element * 2;
+}
+
+function square(element, index, array){
+    array[index] = Math.pow(element, 2)
+}
+
+function display(element){
+    console.log(element);
+}
+ */
+
