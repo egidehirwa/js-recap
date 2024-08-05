@@ -153,4 +153,16 @@ const data = [
   author
   genres
   publicationDate
-  pages
+  pages 
+
+  // Rest operator
+
+  
+
+  // Spread operator
+
+  const films = ['dune', 'avatar', 'shengen']
+
+  const updateFilms = [...films, 'mongolfiere']
+
+  updateFilms
