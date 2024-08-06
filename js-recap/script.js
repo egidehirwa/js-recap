@@ -145,7 +145,7 @@ const data = [
   
   // Destructuring
   
-  const book = getBook(3);
+  const book = getBook(1);
   
   const {title, author, pages, publicationDate, genres} = book
   
@@ -166,3 +166,17 @@ const data = [
   const updateFilms = [...films, 'mongolfiere']
 
   updateFilms
+
+  // Template literals
+
+  const message = `i watched a movie called ${films[0]} published on ${publicationDate.split('-')[0]}`
+
+  message
+
+  // Ternary operator
+
+  const pageRange = pages > 1000 ? "over a thousand" : "less than 1000"
+  
+  pageRange
+
+  console.log(`The book has ${pageRange} pages.`)
